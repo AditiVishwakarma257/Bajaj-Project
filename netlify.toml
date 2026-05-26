@@ -1,0 +1,13 @@
+[build]
+  # build the frontend from the frontend/ folder
+  command   = "cd frontend && npm install && npm run build"
+  publish   = "frontend/dist"
+  functions = "backend/functions"
+
+# CORS headers for the /tickets API
+[[headers]]
+  for = "/tickets/*"
+  [headers.values]
+    Access-Control-Allow-Origin  = "*"
+    Access-Control-Allow-Methods = "GET, POST, PATCH, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"

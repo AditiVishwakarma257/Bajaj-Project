@@ -1,0 +1,15 @@
+{
+  "name": "deskflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DeskFlow – Helpdesk Ticket Management System",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm install && npm run build",
+    "install:all": "cd frontend && npm install"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.8.2",
+    "mongoose": "^8.15.0"
+  }
+}
